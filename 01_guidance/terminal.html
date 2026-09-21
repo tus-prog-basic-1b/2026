@@ -8,29 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://tus-prog-basic-1b.github.io/2026/index.html">
+        <link rel="canonical" href="https://tus-prog-basic-1b.github.io/2026/01_guidance/terminal.html">
       
       
+        <link rel="prev" href="../units/lecture02/index.html">
       
-        <link rel="next" href="./units/lecture01/index.html">
+      
+        <link rel="next" href="../02_fundamentals/lessons/c.html">
       
       
         
       
       
-      <link rel="icon" href="./assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="zensical-0.0.60">
     
     
       
-        <title>ホーム - C言語入門</title>
+        <title>VS Code の使い方 & Terminalのおさらい - C言語入門</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="./assets/stylesheets/modern/main.ce62732f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.ce62732f.min.css">
       
       
 
@@ -49,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -67,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2026-c" class="md-skip">
+        <a href="#vs-code-terminal" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -83,7 +85,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="index.html" title="C言語入門" class="md-header__button md-logo" aria-label="C言語入門" data-md-component="logo">
+    <a href="../index.html" title="C言語入門" class="md-header__button md-logo" aria-label="C言語入門" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
@@ -103,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ホーム
+              VS Code の使い方 & Terminalのおさらい
             
           </span>
         </div>
@@ -156,7 +158,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="C言語入門" class="md-nav__button md-logo" aria-label="C言語入門" data-md-component="logo">
+    <a href="../index.html" title="C言語入門" class="md-nav__button md-logo" aria-label="C言語入門" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
@@ -171,36 +173,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  ホーム
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
         
   
   
@@ -215,49 +191,6 @@
   
 
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        講義資料
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        演習課題
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -266,8 +199,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -279,11 +214,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -303,7 +238,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -338,7 +273,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./units/lecture01/index.html" class="md-nav__link ">
+            <a href="../units/lecture01/index.html" class="md-nav__link ">
               
   
   
@@ -380,6 +315,8 @@
                 
   
   
+    
+  
   
   
     
@@ -397,15 +334,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./units/lecture02/index.html" class="md-nav__link ">
+            <a href="../units/lecture02/index.html" class="md-nav__link ">
               
   
   
@@ -428,7 +365,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -444,8 +381,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -463,11 +402,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
@@ -487,7 +426,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -501,10 +440,36 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="./01_guidance/terminal.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  VS Code の使い方 & Terminalのおさらい
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="terminal.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -519,6 +484,82 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        現在の場所とファイルを確認する
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ディレクトリを作って移動する
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        参考: プログラムの編集と保存方法
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        参考: コンパイル・実行方法
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        参考: ターミナル操作のコツ
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -531,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/lessons/c.html" class="md-nav__link">
+      <a href="../02_fundamentals/lessons/c.html" class="md-nav__link">
         
   
   
@@ -558,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/lessons/simpleProgram.html" class="md-nav__link">
+      <a href="../02_fundamentals/lessons/simpleProgram.html" class="md-nav__link">
         
   
   
@@ -585,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/lessons/comment.html" class="md-nav__link">
+      <a href="../02_fundamentals/lessons/comment.html" class="md-nav__link">
         
   
   
@@ -612,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/lessons/errormessage.html" class="md-nav__link">
+      <a href="../02_fundamentals/lessons/errormessage.html" class="md-nav__link">
         
   
   
@@ -698,7 +739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/exercises/exq1-non.html" class="md-nav__link">
+      <a href="../02_fundamentals/exercises/exq1-non.html" class="md-nav__link">
         
   
   
@@ -725,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/exercises/exq2-hlw.html" class="md-nav__link">
+      <a href="../02_fundamentals/exercises/exq2-hlw.html" class="md-nav__link">
         
   
   
@@ -848,7 +889,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./units/practical-guides/index.html" class="md-nav__link ">
+            <a href="../units/practical-guides/index.html" class="md-nav__link ">
               
   
   
@@ -890,7 +931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./05_practicals/common/command-cheatsheet.html" class="md-nav__link">
+      <a href="../05_practicals/common/command-cheatsheet.html" class="md-nav__link">
         
   
   
@@ -917,7 +958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./05_practicals/common/completion-checks.html" class="md-nav__link">
+      <a href="../05_practicals/common/completion-checks.html" class="md-nav__link">
         
   
   
@@ -944,7 +985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./05_practicals/common/debug-workflow.html" class="md-nav__link">
+      <a href="../05_practicals/common/debug-workflow.html" class="md-nav__link">
         
   
   
@@ -1023,7 +1064,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        講義資料
+        現在の場所とファイルを確認する
       </span>
     </span>
   </a>
@@ -1034,7 +1075,40 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        演習課題
+        ディレクトリを作って移動する
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        参考: プログラムの編集と保存方法
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        参考: コンパイル・実行方法
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        参考: ターミナル操作のコツ
       </span>
     </span>
   </a>
@@ -1056,16 +1130,60 @@
                 
                   
 
-<h1 id="2026-c">2026年度 C言語入門<a class="headerlink" href="#2026-c" title="Permanent link">&para;</a></h1>
-<h2 id="_1">講義資料<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><a href="../units/lecture02/index.html">この回の教材一覧</a></p>
+<h1 id="vs-code-terminal">VS Code の使い方 &amp; Terminalのおさらい<a class="headerlink" href="#vs-code-terminal" title="Permanent link">&para;</a></h1>
+<p>VS CodeをWSLのUbuntuに接続し、授業用のフォルダーを開きます。「View → Terminal」でUbuntuのターミナルを表示してください。</p>
+<h2 id="_1">現在の場所とファイルを確認する<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>最初に、自分が今どこにいるのかを確認してみましょう。ターミナルで以下のコマンドを実行してください。</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$<span class="w"> </span><span class="nb">pwd</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>$<span class="w"> </span>ls
+</span></code></pre></div>
+<p><code>pwd</code> は現在のディレクトリ、<code>ls</code> はその中のファイルやディレクトリを表示します。
+Linuxのターミナルを開くと、最初の位置は <strong>ホームディレクトリ</strong> と呼ばれるディレクトリで、 pwd を実行すると <code>/home/&lt;ユーザ名&gt;</code> と表示されると思います。これがあなたのホームディレクトリです。</p>
+<p>WSL2では、このLinuxのディレクトリはWindows側からも見ることができます。Windowsでフォルダーアプリを開くと、通常のストレージとは別に、ペンギンロゴが付いた「Linux」という項目が見えると思います。この下に「Ubuntu」という名前のフォルダがあり、home → &lt;ユーザ名&gt; と辿ると、第1回で作ったhello.cなどが見えるはずです。</p>
+<p>絶対パスでは、 <code>¥¥wsl.localhost¥Ubuntu¥home¥&lt;ユーザー名&gt;</code> のように表示されます。</p>
+<h2 id="_2">ディレクトリを作って移動する<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>次に、今日の講義のプログラムを保存・編集するための作業スペースとして、専用ディレクトリを作りましょう。</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>~/prog-basic-b1/week02
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/prog-basic-b1/week02
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>$<span class="w"> </span><span class="nb">pwd</span>
+</span></code></pre></div>
+<p><code>mkdir</code> はディレクトリを作成するコマンド (<strong>m</strong>a<strong>k</strong>e <strong>dir</strong>ectory) で、cd は指定したディレクトリへ移動するコマンド (<strong>c</strong>hange <strong>d</strong>irectory) です。
+<code>~</code> はUbuntuのホームディレクトリ <code>/home/&lt;ユーザ名&gt;</code> を表します。 つまり、これらのコマンドは「ホームディレクトリ直下に <code>prog-basic-b1/</code>, 更にその下に <code>week02/</code> というディレクトリを作り、その作成したディレクトリへ移動してください」という意味になります。コマンドが正しく成功すると、後述のプログラムや実行ファイルは全て <code>~/prog-basic-b1/week02/</code> に保存されます。</p>
+<p>今後この授業では、各週ごとに作業ディレクトリを <code>~/prog-basic-b1/</code> 以下に作ります。例として、第3回の授業用に <code>week03/</code> のディレクトリを作ってみましょう。</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>$<span class="w"> </span>mkdir<span class="w"> </span>week03
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>$<span class="w"> </span>ls
+</span></code></pre></div>
+<p><code>..</code> は自分の現在のディレクトリから一つ上の階層を表します。 つまりここでは、今いるディレクトリ <code>~/prog-basic-01/week02</code> から一つ上の階層 <code>~/prog-basic-01/</code> へ移動し、その直下に <code>week03/</code> を作成しています。 <code>ls</code> を実行すると、 <code>week02/</code> <code>week03</code> の2つのディレクトリが見えると思います。</p>
+<p>また、便利な機能として、ディレクトリを指定せず <code>cd</code> のみ実行すると、ホームディレクトリへ移動できます。</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$<span class="w"> </span><span class="nb">cd</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>$<span class="w"> </span><span class="nb">pwd</span>
+</span></code></pre></div>
+<p>それでは、<code>week02/</code>へ戻って次ページ<a href="../02_fundamentals/lessons/c.html">「C言語の基礎」</a>へ進みましょう。 </p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/prog-basic-b1/week02
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>$<span class="w"> </span><span class="nb">pwd</span>
+</span></code></pre></div>
+<hr />
+<h2 id="_3">参考: プログラムの編集と保存方法<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>$<span class="w"> </span>code<span class="w"> </span>none.c
+</span></code></pre></div>
+<p>上記のコマンドをターミナルで実行すると、VS Codeのエディタで <code>none.c</code> という名前のファイルが新しく開きます。プログラムを書き込んでから <code>Ctrl+S</code> で保存すると、Ubuntuターミナルの現在のディレクトリの同名のファイルが保存されます。</p>
+<h2 id="_4">参考: コンパイル・実行方法<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>$<span class="w"> </span>gcc<span class="w"> </span>none.c
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>$<span class="w"> </span>./a.out
+</span></code></pre></div>
+<p>1行目: <code>gcc</code> がソースファイルから実行ファイルを作ります。実行ファイルの名前は、何も指定をしない場合は <code>a.out</code> となります。</p>
+<p>2行目: a.outを実行します。<code>./</code> は現在のディレクトリを表すため、このコマンドは「現在のディレクトリ (./) にある a.out を実行してください"という意味になります。 プログラムを変更したら、変更を実行ファイルに反映させるために再度コンパイルをしてください。</p>
+<h2 id="_5">参考: ターミナル操作のコツ<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="units/lecture01/index.html">第1回 (2026/9/14)：初回ガイダンス</a></li>
-<li><a href="units/lecture02/index.html">第2回 (2026/9/28)：Terminalの復習とCプログラムの基本</a></li>
+<li>ファイル名やディレクトリ名の大文字・小文字は区別されるので注意しましょう。</li>
+<li>入力途中で <code>Tab</code> を押すと名前を補完できます。</li>
+<li>上矢印キーを押すと、直前に実行したコマンドを表示してそのまま実行できます。</li>
+<li>実行中のプログラムを止めるときは <code>Ctrl+C</code> を使います。</li>
+<li>教材にある <code>$</code> は入力待ちの記号です。コマンドと一緒に入力しません。</li>
 </ul>
-<h2 id="_2">演習課題<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="units/practical-guides/index.html">演習の共通資料</a></li>
-</ul>
+<p><a href="../navigation.html">目次</a></p>
 
 
 
@@ -1096,15 +1214,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
+          
+          <a href="../units/lecture02/index.html" class="md-footer__link md-footer__link--prev" aria-label="前: 第2回 (2026&#x2f;9&#x2f;28)：Terminalの復習とCプログラムの基本">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                前
+              </span>
+              <div class="md-ellipsis">
+                第2回 (2026/9/28)：Terminalの復習とCプログラムの基本
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="./units/lecture01/index.html" class="md-footer__link md-footer__link--next" aria-label="次: 第1回 (2026&#x2f;9&#x2f;14)：初回ガイダンス">
+          <a href="../02_fundamentals/lessons/c.html" class="md-footer__link md-footer__link--next" aria-label="次: C言語の基礎">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 次
               </span>
               <div class="md-ellipsis">
-                第1回 (2026/9/14)：初回ガイダンス
+                C言語の基礎
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1141,10 +1275,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":".","features":["navigation.indexes","navigation.footer"],"search":"./assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"コピーしました","clipboard.copy":"クリップボードへコピー","search.result.more.one":"このページ内にもう1件見つかりました","search.result.more.other":"このページ内にあと#件見つかりました","search.result.none":"何も見つかりませんでした","search.result.one":"1件見つかりました","search.result.other":"#件見つかりました","search.result.placeholder":"検索キーワードを入力してください","search.result.term.missing":"検索に含まれない","select.version":"バージョン切り替え"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.indexes","navigation.footer"],"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"コピーしました","clipboard.copy":"クリップボードへコピー","search.result.more.one":"このページ内にもう1件見つかりました","search.result.more.other":"このページ内にあと#件見つかりました","search.result.none":"何も見つかりませんでした","search.result.one":"1件見つかりました","search.result.other":"#件見つかりました","search.result.placeholder":"検索キーワードを入力してください","search.result.term.missing":"検索に含まれない","select.version":"バージョン切り替え"},"version":null}</script>
     
     
-      <script src="./assets/javascripts/bundle.88ee1349.min.js"></script>
+      <script src="../assets/javascripts/bundle.88ee1349.min.js"></script>
       
     
   </body>

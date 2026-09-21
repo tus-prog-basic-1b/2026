@@ -8,29 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://tus-prog-basic-1b.github.io/2026/index.html">
+        <link rel="canonical" href="https://tus-prog-basic-1b.github.io/2026/units/lecture02/index.html">
       
       
+        <link rel="prev" href="../lecture01/index.html">
       
-        <link rel="next" href="./units/lecture01/index.html">
+      
+        <link rel="next" href="../../01_guidance/terminal.html">
       
       
         
       
       
-      <link rel="icon" href="./assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="zensical-0.0.60">
     
     
       
-        <title>ホーム - C言語入門</title>
+        <title>第2回 (2026/9/28)：Terminalの復習とCプログラムの基本 - C言語入門</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="./assets/stylesheets/modern/main.ce62732f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.ce62732f.min.css">
       
       
 
@@ -49,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -67,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2026-c" class="md-skip">
+        <a href="#2-2026928terminalc" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -83,7 +85,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="index.html" title="C言語入門" class="md-header__button md-logo" aria-label="C言語入門" data-md-component="logo">
+    <a href="../../index.html" title="C言語入門" class="md-header__button md-logo" aria-label="C言語入門" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
@@ -103,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ホーム
+              第2回 (2026/9/28)：Terminalの復習とCプログラムの基本
             
           </span>
         </div>
@@ -156,7 +158,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="C言語入門" class="md-nav__button md-logo" aria-label="C言語入門" data-md-component="logo">
+    <a href="../../index.html" title="C言語入門" class="md-nav__button md-logo" aria-label="C言語入門" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
@@ -171,36 +173,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  ホーム
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
         
   
   
@@ -215,49 +191,6 @@
   
 
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        講義資料
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        演習課題
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -266,8 +199,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -279,11 +214,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -303,7 +238,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -338,7 +273,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./units/lecture01/index.html" class="md-nav__link ">
+            <a href="../lecture01/index.html" class="md-nav__link ">
               
   
   
@@ -380,6 +315,8 @@
                 
   
   
+    
+  
   
   
     
@@ -397,15 +334,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./units/lecture02/index.html" class="md-nav__link ">
+            <a href="index.html" class="md-nav__link md-nav__link--active">
               
   
   
@@ -422,13 +359,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+              <label class="md-nav__link md-nav__link--active" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -504,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./01_guidance/terminal.html" class="md-nav__link">
+      <a href="../../01_guidance/terminal.html" class="md-nav__link">
         
   
   
@@ -531,7 +468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/lessons/c.html" class="md-nav__link">
+      <a href="../../02_fundamentals/lessons/c.html" class="md-nav__link">
         
   
   
@@ -558,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/lessons/simpleProgram.html" class="md-nav__link">
+      <a href="../../02_fundamentals/lessons/simpleProgram.html" class="md-nav__link">
         
   
   
@@ -585,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/lessons/comment.html" class="md-nav__link">
+      <a href="../../02_fundamentals/lessons/comment.html" class="md-nav__link">
         
   
   
@@ -612,7 +549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/lessons/errormessage.html" class="md-nav__link">
+      <a href="../../02_fundamentals/lessons/errormessage.html" class="md-nav__link">
         
   
   
@@ -698,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/exercises/exq1-non.html" class="md-nav__link">
+      <a href="../../02_fundamentals/exercises/exq1-non.html" class="md-nav__link">
         
   
   
@@ -725,7 +662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/exercises/exq2-hlw.html" class="md-nav__link">
+      <a href="../../02_fundamentals/exercises/exq2-hlw.html" class="md-nav__link">
         
   
   
@@ -848,7 +785,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./units/practical-guides/index.html" class="md-nav__link ">
+            <a href="../practical-guides/index.html" class="md-nav__link ">
               
   
   
@@ -890,7 +827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./05_practicals/common/command-cheatsheet.html" class="md-nav__link">
+      <a href="../../05_practicals/common/command-cheatsheet.html" class="md-nav__link">
         
   
   
@@ -917,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./05_practicals/common/completion-checks.html" class="md-nav__link">
+      <a href="../../05_practicals/common/completion-checks.html" class="md-nav__link">
         
   
   
@@ -944,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./05_practicals/common/debug-workflow.html" class="md-nav__link">
+      <a href="../../05_practicals/common/debug-workflow.html" class="md-nav__link">
         
   
   
@@ -1023,7 +960,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        講義資料
+        講義
       </span>
     </span>
   </a>
@@ -1034,7 +971,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        演習課題
+        基礎演習
       </span>
     </span>
   </a>
@@ -1056,15 +993,20 @@
                 
                   
 
-<h1 id="2026-c">2026年度 C言語入門<a class="headerlink" href="#2026-c" title="Permanent link">&para;</a></h1>
-<h2 id="_1">講義資料<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h1 id="2-2026928terminalc">第2回 (2026/9/28)：Terminalの復習とCプログラムの基本<a class="headerlink" href="#2-2026928terminalc" title="Permanent link">&para;</a></h1>
+<p>Terminalの操作を復習し、手続き型言語の一例としてC言語のプログラムを学びます。</p>
+<h2 id="_1">講義<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="units/lecture01/index.html">第1回 (2026/9/14)：初回ガイダンス</a></li>
-<li><a href="units/lecture02/index.html">第2回 (2026/9/28)：Terminalの復習とCプログラムの基本</a></li>
+<li><a href="../../01_guidance/terminal.html">VS Code の使い方 &amp; Terminalのおさらい</a></li>
+<li><a href="../../02_fundamentals/lessons/c.html">C言語の基礎</a></li>
+<li><a href="../../02_fundamentals/lessons/simpleProgram.html">簡単なプログラム</a></li>
+<li><a href="../../02_fundamentals/lessons/comment.html">コメントと空白</a></li>
+<li><a href="../../02_fundamentals/lessons/errormessage.html">エラーメッセージ</a></li>
 </ul>
-<h2 id="_2">演習課題<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_2">基礎演習<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="units/practical-guides/index.html">演習の共通資料</a></li>
+<li><a href="../../02_fundamentals/exercises/exq1-non.html">演習1：何もしないプログラム</a></li>
+<li><a href="../../02_fundamentals/exercises/exq2-hlw.html">演習2：文字列を出力する</a></li>
 </ul>
 
 
@@ -1096,15 +1038,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
+          
+          <a href="../lecture01/index.html" class="md-footer__link md-footer__link--prev" aria-label="前: 第1回 (2026&#x2f;9&#x2f;14)：初回ガイダンス">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                前
+              </span>
+              <div class="md-ellipsis">
+                第1回 (2026/9/14)：初回ガイダンス
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="./units/lecture01/index.html" class="md-footer__link md-footer__link--next" aria-label="次: 第1回 (2026&#x2f;9&#x2f;14)：初回ガイダンス">
+          <a href="../../01_guidance/terminal.html" class="md-footer__link md-footer__link--next" aria-label="次: VS Code の使い方 &amp; Terminalのおさらい">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 次
               </span>
               <div class="md-ellipsis">
-                第1回 (2026/9/14)：初回ガイダンス
+                VS Code の使い方 & Terminalのおさらい
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1141,10 +1099,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":".","features":["navigation.indexes","navigation.footer"],"search":"./assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"コピーしました","clipboard.copy":"クリップボードへコピー","search.result.more.one":"このページ内にもう1件見つかりました","search.result.more.other":"このページ内にあと#件見つかりました","search.result.none":"何も見つかりませんでした","search.result.one":"1件見つかりました","search.result.other":"#件見つかりました","search.result.placeholder":"検索キーワードを入力してください","search.result.term.missing":"検索に含まれない","select.version":"バージョン切り替え"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.indexes","navigation.footer"],"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"コピーしました","clipboard.copy":"クリップボードへコピー","search.result.more.one":"このページ内にもう1件見つかりました","search.result.more.other":"このページ内にあと#件見つかりました","search.result.none":"何も見つかりませんでした","search.result.one":"1件見つかりました","search.result.other":"#件見つかりました","search.result.placeholder":"検索キーワードを入力してください","search.result.term.missing":"検索に含まれない","select.version":"バージョン切り替え"},"version":null}</script>
     
     
-      <script src="./assets/javascripts/bundle.88ee1349.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88ee1349.min.js"></script>
       
     
   </body>

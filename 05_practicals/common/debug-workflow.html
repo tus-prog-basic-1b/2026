@@ -8,29 +8,29 @@
       
       
       
-        <link rel="canonical" href="https://tus-prog-basic-1b.github.io/2026/index.html">
+        <link rel="canonical" href="https://tus-prog-basic-1b.github.io/2026/05_practicals/common/debug-workflow.html">
       
       
+        <link rel="prev" href="./completion-checks.html">
       
-        <link rel="next" href="./units/lecture01/index.html">
       
       
         
       
       
-      <link rel="icon" href="./assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="zensical-0.0.60">
     
     
       
-        <title>ホーム - C言語入門</title>
+        <title>デバッグの進め方 - C言語入門</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="./assets/stylesheets/modern/main.ce62732f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.ce62732f.min.css">
       
       
 
@@ -49,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2026-c" class="md-skip">
+        <a href="#_1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -83,7 +83,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="index.html" title="C言語入門" class="md-header__button md-logo" aria-label="C言語入門" data-md-component="logo">
+    <a href="../../index.html" title="C言語入門" class="md-header__button md-logo" aria-label="C言語入門" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ホーム
+              デバッグの進め方
             
           </span>
         </div>
@@ -156,7 +156,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="C言語入門" class="md-nav__button md-logo" aria-label="C言語入門" data-md-component="logo">
+    <a href="../../index.html" title="C言語入門" class="md-nav__button md-logo" aria-label="C言語入門" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
@@ -171,36 +171,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  ホーム
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
         
   
   
@@ -215,49 +189,6 @@
   
 
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        講義資料
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        演習課題
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -338,7 +269,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./units/lecture01/index.html" class="md-nav__link ">
+            <a href="../../units/lecture01/index.html" class="md-nav__link ">
               
   
   
@@ -405,7 +336,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./units/lecture02/index.html" class="md-nav__link ">
+            <a href="../../units/lecture02/index.html" class="md-nav__link ">
               
   
   
@@ -504,7 +435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./01_guidance/terminal.html" class="md-nav__link">
+      <a href="../../01_guidance/terminal.html" class="md-nav__link">
         
   
   
@@ -531,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/lessons/c.html" class="md-nav__link">
+      <a href="../../02_fundamentals/lessons/c.html" class="md-nav__link">
         
   
   
@@ -558,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/lessons/simpleProgram.html" class="md-nav__link">
+      <a href="../../02_fundamentals/lessons/simpleProgram.html" class="md-nav__link">
         
   
   
@@ -585,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/lessons/comment.html" class="md-nav__link">
+      <a href="../../02_fundamentals/lessons/comment.html" class="md-nav__link">
         
   
   
@@ -612,7 +543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/lessons/errormessage.html" class="md-nav__link">
+      <a href="../../02_fundamentals/lessons/errormessage.html" class="md-nav__link">
         
   
   
@@ -698,7 +629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/exercises/exq1-non.html" class="md-nav__link">
+      <a href="../../02_fundamentals/exercises/exq1-non.html" class="md-nav__link">
         
   
   
@@ -725,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/exercises/exq2-hlw.html" class="md-nav__link">
+      <a href="../../02_fundamentals/exercises/exq2-hlw.html" class="md-nav__link">
         
   
   
@@ -772,8 +703,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -783,11 +716,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -807,7 +740,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -821,6 +754,8 @@
                 
   
   
+    
+  
   
   
     
@@ -840,15 +775,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./units/practical-guides/index.html" class="md-nav__link ">
+            <a href="../../units/practical-guides/index.html" class="md-nav__link ">
               
   
   
@@ -871,7 +806,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -890,7 +825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./05_practicals/common/command-cheatsheet.html" class="md-nav__link">
+      <a href="./command-cheatsheet.html" class="md-nav__link">
         
   
   
@@ -917,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./05_practicals/common/completion-checks.html" class="md-nav__link">
+      <a href="./completion-checks.html" class="md-nav__link">
         
   
   
@@ -941,10 +876,36 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="./05_practicals/common/debug-workflow.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  デバッグの進め方
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="debug-workflow.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -959,6 +920,71 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        エラーの種類
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        修正と確認の手順
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        テスト値の選び方
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        デバッガで見るもの
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1020,10 +1046,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        講義資料
+        エラーの種類
       </span>
     </span>
   </a>
@@ -1031,10 +1057,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        演習課題
+        修正と確認の手順
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        テスト値の選び方
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        デバッガで見るもの
       </span>
     </span>
   </a>
@@ -1056,15 +1104,67 @@
                 
                   
 
-<h1 id="2026-c">2026年度 C言語入門<a class="headerlink" href="#2026-c" title="Permanent link">&para;</a></h1>
-<h2 id="_1">講義資料<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><a href="../../units/practical-guides/index.html">この回の教材一覧</a></p>
+<!--
+---
+title: "デバッグの進め方"
+source: "generated/practicals/common"
+---
+-->
+
+<p><a href="../../navigation.html">目次</a></p>
+<h1 id="_1">デバッグの進め方<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">エラーの種類<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>種類</th>
+<th>状態</th>
+<th>例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>コンパイルエラー</td>
+<td>Cの文法などが正しくなく、実行ファイルを作れない</td>
+<td>セミコロン不足、未宣言の変数</td>
+</tr>
+<tr>
+<td>警告</td>
+<td>実行ファイルは作れる場合があるが、危険な誤りが疑われる</td>
+<td>型と書式指定子の不一致</td>
+</tr>
+<tr>
+<td>実行時の異常</td>
+<td>実行中に停止する、終わらない</td>
+<td>無限ループ</td>
+</tr>
+<tr>
+<td>論理エラー</td>
+<td>実行できるが結果が仕様と違う</td>
+<td>境界値だけ誤判定する</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">修正と確認の手順<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ol>
+<li><code>gcc -std=c11 -Wall -Wextra -pedantic -g source.c -o executable</code> でコンパイルする。</li>
+<li>最初のエラーまたは警告から、ファイル名、行番号、種類を読む。</li>
+<li>その行と直前の行を見て原因を予想する。</li>
+<li>一度に1箇所だけ修正する。</li>
+<li>保存したソースを再コンパイルし、実行ファイルを更新する。</li>
+<li>通常値、境界値、境界の前後で実行し、期待結果と比較する。</li>
+</ol>
+<p>最初の誤りが後続の多数のエラーを引き起こすことがあります。一つずつ直すと、どの修正が結果を変えたか説明できます。</p>
+<h2 id="_4">テスト値の選び方<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>「60点以上が合格」なら、通常値だけでなく <code>59</code>、<code>60</code>、<code>61</code> を試します。この切り替わる値を境界値と呼びます。条件が複数ある場合は、それぞれの境界と、どの条件にも該当しない値を選びます。</p>
+<h2 id="_5">デバッガで見るもの<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="units/lecture01/index.html">第1回 (2026/9/14)：初回ガイダンス</a></li>
-<li><a href="units/lecture02/index.html">第2回 (2026/9/28)：Terminalの復習とCプログラムの基本</a></li>
-</ul>
-<h2 id="_2">演習課題<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="units/practical-guides/index.html">演習の共通資料</a></li>
+<li>ループ前の累積変数の初期値</li>
+<li>条件を判定する直前の変数</li>
+<li>1回の反復で変わる値</li>
+<li>最後にループ本体を実行したときの値</li>
+<li>ループ終了直後の値</li>
 </ul>
 
 
@@ -1096,22 +1196,22 @@
       
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
-        
           
-          <a href="./units/lecture01/index.html" class="md-footer__link md-footer__link--next" aria-label="次: 第1回 (2026&#x2f;9&#x2f;14)：初回ガイダンス">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                次
-              </span>
-              <div class="md-ellipsis">
-                第1回 (2026/9/14)：初回ガイダンス
-              </div>
-            </div>
+          <a href="./completion-checks.html" class="md-footer__link md-footer__link--prev" aria-label="前: 5限演習の完了確認">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                前
+              </span>
+              <div class="md-ellipsis">
+                5限演習の完了確認
+              </div>
             </div>
           </a>
+        
         
       </nav>
     
@@ -1141,10 +1241,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":".","features":["navigation.indexes","navigation.footer"],"search":"./assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"コピーしました","clipboard.copy":"クリップボードへコピー","search.result.more.one":"このページ内にもう1件見つかりました","search.result.more.other":"このページ内にあと#件見つかりました","search.result.none":"何も見つかりませんでした","search.result.one":"1件見つかりました","search.result.other":"#件見つかりました","search.result.placeholder":"検索キーワードを入力してください","search.result.term.missing":"検索に含まれない","select.version":"バージョン切り替え"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.indexes","navigation.footer"],"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"コピーしました","clipboard.copy":"クリップボードへコピー","search.result.more.one":"このページ内にもう1件見つかりました","search.result.more.other":"このページ内にあと#件見つかりました","search.result.none":"何も見つかりませんでした","search.result.one":"1件見つかりました","search.result.other":"#件見つかりました","search.result.placeholder":"検索キーワードを入力してください","search.result.term.missing":"検索に含まれない","select.version":"バージョン切り替え"},"version":null}</script>
     
     
-      <script src="./assets/javascripts/bundle.88ee1349.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88ee1349.min.js"></script>
       
     
   </body>

@@ -696,6 +696,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        作業ディレクトリの準備
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1_1" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -740,7 +751,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
         コンパイルがうまくいかないときの対応策
@@ -1061,6 +1072,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        作業ディレクトリの準備
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1_1" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -1105,7 +1127,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
         コンパイルがうまくいかないときの対応策
@@ -1143,51 +1165,57 @@ source: "nginx/html/exq1-non.html"
 <p>C言語で、何もしないプログラム（none.cで示したもの）を書きなさい。
 ファイル名はexe01.cにしなさい。</p>
 <hr />
+<h2 id="_1">作業ディレクトリの準備<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>本演習の作業ディレクトリ<code>~/prog-basic-b1/week02/basic</code>を作成し、移動する。</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>~/prog-basic-b1/week02/basic
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/prog-basic-b1/week02/basic
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>$<span class="w"> </span><span class="nb">pwd</span>
+</span></code></pre></div>
 <h2 id="1_1">ステップ1<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h2>
 <p>WSLに接続したVS Codeでexe01.cの作成を開始する。</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$<span class="w"> </span>code<span class="w"> </span>exe01.c
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$<span class="w"> </span>code<span class="w"> </span>exe01.c
 </span></code></pre></div>
 <hr />
 <h2 id="2">ステップ2<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <p>exe01.cにプログラムを入力して保存する。（Ctrl+S）</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span>
 </span></code></pre></div>
 <hr />
 <h2 id="3">ステップ3<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <p>コンパイルする。</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$<span class="w"> </span>gcc<span class="w"> </span>exe01.c
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$<span class="w"> </span>gcc<span class="w"> </span>exe01.c
 </span></code></pre></div>
 <hr />
 <h2 id="4">ステップ4<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
 <p>WSLのターミナルで実行します。</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$<span class="w"> </span>./a.out
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>$<span class="w"> </span>./a.out
 </span></code></pre></div>
 <p>実行できない場合は、カレントディレクトリと、コンパイルでa.outが作成されたことを確認してください。</p>
 <hr />
-<h2 id="_1">コンパイルがうまくいかないときの対応策<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_2">コンパイルがうまくいかないときの対応策<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>きちんとプログラムを作ったつもりでも、しばしばコンパイルが通らないことがあります。
 例えば次のようなエラーメッセージが出ることがあります。</p>
 <p><strong>ケース1</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>$<span class="w"> </span>gcc<span class="w"> </span>nome.c
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>gcc:<span class="w"> </span>エラー:<span class="w"> </span>nome.c:<span class="w"> </span>そのようなファイルやディレクトリはありません
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>gcc:<span class="w"> </span>致命的エラー:<span class="w"> </span>入力ファイルがありません
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>コンパイルを停止しました。
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>$<span class="w"> </span>gcc<span class="w"> </span>nome.c
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>gcc:<span class="w"> </span>エラー:<span class="w"> </span>nome.c:<span class="w"> </span>そのようなファイルやディレクトリはありません
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>gcc:<span class="w"> </span>致命的エラー:<span class="w"> </span>入力ファイルがありません
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>コンパイルを停止しました。
 </span></code></pre></div>
 <p>⇒ファイル名を間違っていませんか？
 もう一度ファイル名を確認してください。</p>
 <p><strong>ケース2</strong></p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">$</span><span class="w"> </span><span class="n">gcc</span><span class="w"> </span><span class="n">none</span><span class="p">.</span><span class="n">c</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">none</span><span class="p">.</span><span class="n">c</span><span class="o">:</span><span class="w"> </span><span class="n">関数</span><span class="w"> </span><span class="err">‘</span><span class="n">main</span><span class="err">’</span><span class="w"> </span><span class="n">内</span><span class="o">:</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">none</span><span class="p">.</span><span class="n">c</span><span class="o">:</span><span class="mi">1</span><span class="o">:</span><span class="mi">1</span><span class="o">:</span><span class="w"> </span><span class="n">エラー</span><span class="o">:</span><span class="w"> </span><span class="n">expected</span><span class="w"> </span><span class="n">declaration</span><span class="w"> </span><span class="n">or</span><span class="w"> </span><span class="n">statement</span><span class="w"> </span><span class="n">at</span><span class="w"> </span><span class="n">end</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">input</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">$</span><span class="w"> </span><span class="n">gcc</span><span class="w"> </span><span class="n">none</span><span class="p">.</span><span class="n">c</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">none</span><span class="p">.</span><span class="n">c</span><span class="o">:</span><span class="w"> </span><span class="n">関数</span><span class="w"> </span><span class="err">‘</span><span class="n">main</span><span class="err">’</span><span class="w"> </span><span class="n">内</span><span class="o">:</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">none</span><span class="p">.</span><span class="n">c</span><span class="o">:</span><span class="mi">1</span><span class="o">:</span><span class="mi">1</span><span class="o">:</span><span class="w"> </span><span class="n">エラー</span><span class="o">:</span><span class="w"> </span><span class="n">expected</span><span class="w"> </span><span class="n">declaration</span><span class="w"> </span><span class="n">or</span><span class="w"> </span><span class="n">statement</span><span class="w"> </span><span class="n">at</span><span class="w"> </span><span class="n">end</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">input</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 </span></code></pre></div>
 <p>⇒プログラムを書き間違えていませんか？
 もう一度プログラムを確認してください。</p>
 <p><strong>ケース3</strong></p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">$</span><span class="w"> </span><span class="n">gcc</span><span class="w"> </span><span class="n">none</span><span class="p">.</span><span class="n">c</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">none</span><span class="p">.</span><span class="n">c</span><span class="o">:</span><span class="w"> </span><span class="n">関数</span><span class="w"> </span><span class="err">‘</span><span class="n">main</span><span class="err">’</span><span class="w"> </span><span class="n">内</span><span class="o">:</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">none</span><span class="p">.</span><span class="n">c</span><span class="o">:</span><span class="mi">1</span><span class="o">:</span><span class="mi">1</span><span class="o">:</span><span class="w"> </span><span class="n">エラー</span><span class="o">:</span><span class="w"> </span><span class="n">プログラム内に逸脱した</span><span class="w"> </span><span class="err">‘\</span><span class="mi">343</span><span class="err">’</span><span class="w"> </span><span class="n">があります</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">　</span><span class="p">}</span>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">$</span><span class="w"> </span><span class="n">gcc</span><span class="w"> </span><span class="n">none</span><span class="p">.</span><span class="n">c</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">none</span><span class="p">.</span><span class="n">c</span><span class="o">:</span><span class="w"> </span><span class="n">関数</span><span class="w"> </span><span class="err">‘</span><span class="n">main</span><span class="err">’</span><span class="w"> </span><span class="n">内</span><span class="o">:</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">none</span><span class="p">.</span><span class="n">c</span><span class="o">:</span><span class="mi">1</span><span class="o">:</span><span class="mi">1</span><span class="o">:</span><span class="w"> </span><span class="n">エラー</span><span class="o">:</span><span class="w"> </span><span class="n">プログラム内に逸脱した</span><span class="w"> </span><span class="err">‘\</span><span class="mi">343</span><span class="err">’</span><span class="w"> </span><span class="n">があります</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">　</span><span class="p">}</span>
 </span></code></pre></div>
 <p>⇒全角文字が混入したりしていませんか？
 もう一度プログラムを確認してください。</p>

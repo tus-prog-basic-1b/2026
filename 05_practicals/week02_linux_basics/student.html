@@ -8,29 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://tus-prog-basic-1b.github.io/2026/index.html">
+        <link rel="canonical" href="https://tus-prog-basic-1b.github.io/2026/05_practicals/week02_linux_basics/student.html">
       
       
+        <link rel="prev" href="../../units/week02_linux_basics/index.html">
       
-        <link rel="next" href="./units/lecture01/index.html">
+      
+        <link rel="next" href="../../units/week02_linux_basics/exercises-files.html">
       
       
         
       
       
-      <link rel="icon" href="./assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="zensical-0.0.60">
     
     
       
-        <title>ホーム - プログラミング基礎1B</title>
+        <title>第2回：Linuxでのファイル操作 - プログラミング基礎1B</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="./assets/stylesheets/modern/main.ce62732f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.ce62732f.min.css">
       
       
 
@@ -49,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -67,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2026-1b" class="md-skip">
+        <a href="#2linux" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -83,7 +85,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="index.html" title="プログラミング基礎1B" class="md-header__button md-logo" aria-label="プログラミング基礎1B" data-md-component="logo">
+    <a href="../../index.html" title="プログラミング基礎1B" class="md-header__button md-logo" aria-label="プログラミング基礎1B" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
@@ -103,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ホーム
+              第2回：Linuxでのファイル操作
             
           </span>
         </div>
@@ -156,7 +158,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="プログラミング基礎1B" class="md-nav__button md-logo" aria-label="プログラミング基礎1B" data-md-component="logo">
+    <a href="../../index.html" title="プログラミング基礎1B" class="md-nav__button md-logo" aria-label="プログラミング基礎1B" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
@@ -171,36 +173,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  ホーム
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
         
   
   
@@ -215,49 +191,6 @@
   
 
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        講義資料
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        演習課題
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -338,7 +271,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./units/lecture01/index.html" class="md-nav__link ">
+            <a href="../../units/lecture01/index.html" class="md-nav__link ">
               
   
   
@@ -405,7 +338,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./units/lecture02/index.html" class="md-nav__link ">
+            <a href="../../units/lecture02/index.html" class="md-nav__link ">
               
   
   
@@ -504,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./01_guidance/terminal.html" class="md-nav__link">
+      <a href="../../01_guidance/terminal.html" class="md-nav__link">
         
   
   
@@ -531,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/lessons/c.html" class="md-nav__link">
+      <a href="../../02_fundamentals/lessons/c.html" class="md-nav__link">
         
   
   
@@ -558,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/lessons/simpleProgram.html" class="md-nav__link">
+      <a href="../../02_fundamentals/lessons/simpleProgram.html" class="md-nav__link">
         
   
   
@@ -585,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/lessons/comment.html" class="md-nav__link">
+      <a href="../../02_fundamentals/lessons/comment.html" class="md-nav__link">
         
   
   
@@ -612,7 +545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/lessons/errormessage.html" class="md-nav__link">
+      <a href="../../02_fundamentals/lessons/errormessage.html" class="md-nav__link">
         
   
   
@@ -698,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/exercises/exq1-non.html" class="md-nav__link">
+      <a href="../../02_fundamentals/exercises/exq1-non.html" class="md-nav__link">
         
   
   
@@ -725,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./02_fundamentals/exercises/exq2-hlw.html" class="md-nav__link">
+      <a href="../../02_fundamentals/exercises/exq2-hlw.html" class="md-nav__link">
         
   
   
@@ -772,8 +705,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -785,11 +720,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -809,7 +744,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -850,7 +785,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./units/practical-guides/index.html" class="md-nav__link ">
+            <a href="../../units/practical-guides/index.html" class="md-nav__link ">
               
   
   
@@ -892,7 +827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./05_practicals/common/command-cheatsheet.html" class="md-nav__link">
+      <a href="../common/command-cheatsheet.html" class="md-nav__link">
         
   
   
@@ -919,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./05_practicals/common/completion-checks.html" class="md-nav__link">
+      <a href="../common/completion-checks.html" class="md-nav__link">
         
   
   
@@ -946,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./05_practicals/common/debug-workflow.html" class="md-nav__link">
+      <a href="../common/debug-workflow.html" class="md-nav__link">
         
   
   
@@ -978,6 +913,8 @@
                 
   
   
+    
+  
   
   
     
@@ -993,15 +930,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./units/week02_linux_basics/index.html" class="md-nav__link ">
+            <a href="../../units/week02_linux_basics/index.html" class="md-nav__link ">
               
   
   
@@ -1024,7 +961,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1040,8 +977,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1053,11 +992,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
@@ -1077,7 +1016,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1091,10 +1030,36 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="./05_practicals/week02_linux_basics/student.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  第2回：Linuxでのファイル操作
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="student.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1109,6 +1074,60 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        課題
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        配布ファイルについての補足
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        完了時に確認するファイル
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1121,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./units/week02_linux_basics/exercises-files.html" class="md-nav__link">
+      <a href="../../units/week02_linux_basics/exercises-files.html" class="md-nav__link">
         
   
   
@@ -1208,7 +1227,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        講義資料
+        課題
       </span>
     </span>
   </a>
@@ -1219,7 +1238,18 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        演習課題
+        配布ファイルについての補足
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        完了時に確認するファイル
       </span>
     </span>
   </a>
@@ -1241,17 +1271,60 @@
                 
                   
 
-<h1 id="2026-1b">2026年度 プログラミング基礎1B<a class="headerlink" href="#2026-1b" title="Permanent link">&para;</a></h1>
-<h2 id="_1">講義資料<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><a href="../../units/week02_linux_basics/index.html">この回の教材一覧</a></p>
+<!--
+---
+title: "第2回：Linuxでのファイル操作"
+source: "generated/practicals/week02"
+---
+-->
+
+<p><a href="../../navigation.html">目次</a></p>
+<h1 id="2linux">第2回：Linuxでのファイル操作<a class="headerlink" href="#2linux" title="Permanent link">&para;</a></h1>
+<h2 id="_1">課題<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>配布された <code>starter/generate_records.c</code> を使い、データ生成プログラムとその生成結果を次の構成に整理してください。</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>week02/
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>└── exercise/
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    ├── src/
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    │   └── generate_records.c
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    ├── bin/
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    │   └── generate_records
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    └── data/
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        ├── records.txt
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        └── records_sorted.txt
+</span></code></pre></div>
+<p>完成までに、次の要件をすべて満たしてください。</p>
+<ol>
+<li>ホームディレクトリの下に作業ディレクトリ <code>prog-basic-b1/week02/exercise/</code> を作成</li>
+<li><code>generate_records.c</code> を作業ディレクトリへコピー</li>
+<li>実行ファイル名を指定せずにコンパイルし、作成されたプログラムの出力を確認</li>
+<li>実行ファイル名を <code>generate_records</code> に変更し、ソースファイルと実行ファイルをそれぞれ <code>src/</code> と <code>bin/</code> に移動（ディレクトリは新たに作成すること）</li>
+<li>整理した実行ファイルの標準出力を <code>data/records.txt</code> に保存</li>
+<li><code>records.txt</code> の行数を確認</li>
+<li><code>records.txt</code> を昇順に並べ替え、その結果を <code>data/records_sorted.txt</code> に保存</li>
+</ol>
+<h2 id="_2">配布ファイルについての補足<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>配布ファイル (week02_linux_basics-exercises.zip) をダウンロードしたら、WindowsのフォルダーアプリからLinuxの作業ディレクトリへ手動で移動させ、解凍する。作業ディレクトリの絶対パスは、Windows側からはおおむね以下のように表示される。
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>¥¥wsl.localhost¥Ubuntu¥home¥&lt;ユーザー名&gt;¥prog-basic-b1¥exercise
+</span></code></pre></div></p>
+<p>もしくは、Linux側のターミナルで <code>wget</code> や <code>curl</code> コマンドを利用することで、直接ダウンロードもできる。その場合、 <code>unzip</code> コマンドでファイルを解凍すること。各種コマンドは <code>apt install &lt;コマンド名&gt;</code> でインストールできる。</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$<span class="w"> </span>wget<span class="w"> </span>https://tus-prog-basic-1b.github.io/2026/downloads/week02_linux_basics-exercises.zip
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>$<span class="w"> </span>unzip<span class="w"> </span>week02_linux_basics-exercises.zip<span class="w"> </span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Archive:<span class="w">  </span>week02_linux_basics-exercises.zip
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>inflating:<span class="w"> </span>starter/generate_records.c<span class="w"> </span>
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$<span class="w"> </span>curl<span class="w"> </span>-O<span class="w"> </span>https://tus-prog-basic-1b.github.io/2026/downloads/week02_linux_basics-exercises.zip
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>$<span class="w"> </span>unzip<span class="w"> </span>week02_linux_basics-exercises.zip<span class="w"> </span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Archive:<span class="w">  </span>week02_linux_basics-exercises.zip
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span>inflating:<span class="w"> </span>starter/generate_records.c<span class="w"> </span>
+</span></code></pre></div>
+<h2 id="_3">完了時に確認するファイル<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="units/lecture01/index.html">第1回 (2026/9/14)：初回ガイダンス</a></li>
-<li><a href="units/lecture02/index.html">第2回 (2026/9/28)：Terminalの復習とCプログラムの基本</a></li>
+<li><code>src/generate_records.c</code></li>
+<li><code>data/records.txt</code></li>
+<li><code>data/records_sorted.txt</code></li>
 </ul>
-<h2 id="_2">演習課題<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="units/practical-guides/index.html">演習の共通資料</a></li>
-<li><a href="units/week02_linux_basics/index.html">第2回 (2026/9/28)：Linuxでのファイル操作</a></li>
-</ul>
+<p>演習の最後に、上記のファイルとディレクトリ構成を作業場所で確認してください。</p>
 
 
 
@@ -1282,15 +1355,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
+          
+          <a href="../../units/week02_linux_basics/index.html" class="md-footer__link md-footer__link--prev" aria-label="前: 第2回 (2026&#x2f;9&#x2f;28)：Linuxでのファイル操作">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                前
+              </span>
+              <div class="md-ellipsis">
+                第2回 (2026/9/28)：Linuxでのファイル操作
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="./units/lecture01/index.html" class="md-footer__link md-footer__link--next" aria-label="次: 第1回 (2026&#x2f;9&#x2f;14)：初回ガイダンス">
+          <a href="../../units/week02_linux_basics/exercises-files.html" class="md-footer__link md-footer__link--next" aria-label="次: 配布ファイル">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 次
               </span>
               <div class="md-ellipsis">
-                第1回 (2026/9/14)：初回ガイダンス
+                配布ファイル
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1327,10 +1416,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":".","features":["navigation.indexes","navigation.footer"],"search":"./assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"コピーしました","clipboard.copy":"クリップボードへコピー","search.result.more.one":"このページ内にもう1件見つかりました","search.result.more.other":"このページ内にあと#件見つかりました","search.result.none":"何も見つかりませんでした","search.result.one":"1件見つかりました","search.result.other":"#件見つかりました","search.result.placeholder":"検索キーワードを入力してください","search.result.term.missing":"検索に含まれない","select.version":"バージョン切り替え"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.indexes","navigation.footer"],"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"コピーしました","clipboard.copy":"クリップボードへコピー","search.result.more.one":"このページ内にもう1件見つかりました","search.result.more.other":"このページ内にあと#件見つかりました","search.result.none":"何も見つかりませんでした","search.result.one":"1件見つかりました","search.result.other":"#件見つかりました","search.result.placeholder":"検索キーワードを入力してください","search.result.term.missing":"検索に含まれない","select.version":"バージョン切り替え"},"version":null}</script>
     
     
-      <script src="./assets/javascripts/bundle.88ee1349.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88ee1349.min.js"></script>
       
     
   </body>

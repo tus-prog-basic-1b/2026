@@ -2252,7 +2252,7 @@ source: "nginx/html/operator.html"
 <p>右辺と左辺の両方に同じ変数が出現することがあります。
 この場合も、まず右辺の計算をして、その値を左辺の変数に格納します。
 次のような更新式をイメージしてください。</p>
-<p><span class="arithmatex">\(x_{t+1} = x_t + 10\)</span></p>
+<p>x<sub>t+1</sub> = x<sub>t</sub> + 10</p>
 <p>op_2.c</p>
 <div class="language-c highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
@@ -2286,7 +2286,7 @@ source: "nginx/html/operator.html"
 </span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">/=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
 </span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"x /= 2: %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">);</span>
 </span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">%=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"x %= 2; %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">);</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"x %%= 2; %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">);</span>
 </span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="p">}</span>
 </span></code></pre></div>
 <h2 id="_4">単項演算子<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>

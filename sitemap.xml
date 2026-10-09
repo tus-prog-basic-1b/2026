@@ -10,93 +10,108 @@
         <loc>https://tus-prog-basic-1b.github.io/2026/units/lecture02/index.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/01_guidance/terminal.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/lectures/02_terminal.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/lessons/c.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/lectures/02_c.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/lessons/simpleProgram.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/lectures/02_simpleProgram.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/lessons/comment.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/lectures/02_comment.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/lessons/errormessage.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/lectures/02_errormessage.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/exercises/exq1-non.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/basics/exq1-non.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/exercises/exq2-hlw.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/basics/exq2-hlw.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/exercises/answers/exq2-hlw.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/basics/answers/exq2-hlw.html</loc>
       </url>
       <url>
         <loc>https://tus-prog-basic-1b.github.io/2026/units/lecture03/index.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/lessons/variable.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/03_variables/lectures/03_variable.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/lessons/operator.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/03_variables/lectures/03_operator.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/exercises/exq3-asn.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/03_variables/basics/exq3-asn.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/exercises/exq4-inc.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/03_variables/basics/exq4-inc.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/exercises/exq5-clc.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/03_variables/basics/exq5-clc.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/exercises/operator_at_coder1.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/03_variables/basics/operator_at_coder1.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/exercises/answers/lecture03.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/03_variables/basics/answers/lecture03.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/exercises/answers/lecture03_atcoder.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/03_variables/basics/answers/lecture03_atcoder.html</loc>
       </url>
       <url>
         <loc>https://tus-prog-basic-1b.github.io/2026/units/lecture03/lecture_answers-files.html</loc>
       </url>
       <url>
+        <loc>https://tus-prog-basic-1b.github.io/2026/units/lecture04/index.html</loc>
+      </url>
+      <url>
+        <loc>https://tus-prog-basic-1b.github.io/2026/04_stdio/lectures/04_char_code.html</loc>
+      </url>
+      <url>
+        <loc>https://tus-prog-basic-1b.github.io/2026/04_stdio/lectures/04_stdio.html</loc>
+      </url>
+      <url>
+        <loc>https://tus-prog-basic-1b.github.io/2026/04_stdio/basics/exq6-chr.html</loc>
+      </url>
+      <url>
+        <loc>https://tus-prog-basic-1b.github.io/2026/04_stdio/basics/exq7-nms.html</loc>
+      </url>
+      <url>
         <loc>https://tus-prog-basic-1b.github.io/2026/units/practical-guides/index.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/05_practicals/common/command-cheatsheet.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/00_common/command-cheatsheet.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/05_practicals/common/completion-checks.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/00_common/completion-checks.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/05_practicals/common/debug-workflow.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/00_common/debug-workflow.html</loc>
       </url>
       <url>
         <loc>https://tus-prog-basic-1b.github.io/2026/units/week02_linux_basics/index.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/05_practicals/week02_linux_basics/student.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/exercises/student.html</loc>
       </url>
       <url>
         <loc>https://tus-prog-basic-1b.github.io/2026/units/week02_linux_basics/exercises-files.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/05_practicals/week02_linux_basics/answers.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/02_fundamentals/exercises/answers/answers.html</loc>
       </url>
       <url>
         <loc>https://tus-prog-basic-1b.github.io/2026/units/week03_linux_search/index.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/05_practicals/week03_linux_search/student.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/03_variables/exercises/student.html</loc>
       </url>
       <url>
         <loc>https://tus-prog-basic-1b.github.io/2026/units/week03_linux_search/exercises-files.html</loc>
       </url>
       <url>
-        <loc>https://tus-prog-basic-1b.github.io/2026/05_practicals/week03_linux_search/answers.html</loc>
+        <loc>https://tus-prog-basic-1b.github.io/2026/03_variables/exercises/answers/answers.html</loc>
       </url>
 </urlset>

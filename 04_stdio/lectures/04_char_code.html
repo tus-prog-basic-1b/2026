@@ -2675,7 +2675,7 @@ source: "nginx/html/24_文字コード.html"
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">word</span><span class="p">);</span>
 </span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">}</span>
 </span></code></pre></div>
-<p><code>char word[6]</code> は6文字分の場所を用意します。<code>"Hello"</code> は5文字ですが、末尾の <code>'\0'</code> の分も必要なので、6文字分の場所を用意します。文字列を表示するときは、<code>%s</code> に配列名 <code>word</code> を渡します。
+<p><code>char word[6]</code> は6文字分の場所を用意します。二重引用符 <code>" "</code> で囲んだ文字列の末尾には <code>'\0'</code> が自動で付き、配列に入れるときも <code>'\0'</code> まで含めて入ります。そのため、<code>"Hello"</code> は5文字ですが、<code>'\0'</code> の分を含めて6文字分の場所を用意します。文字列を表示するときは、<code>%s</code> に配列名 <code>word</code> を渡します。
 上記を実行すると、1行目に <code>A</code>、2行目に <code>Hello</code> が表示されます。</p>
 
 

@@ -2507,7 +2507,7 @@ source:
 <p><a href="../../navigation.html">目次</a></p>
 <h1 id="_1">標準入出力<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <h2 id="_2">標準入力<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>プログラムを実行するとき、キーボードから値を入力させたいことがあります。
+<p>これまでのプログラムでは、変数の値を変えるたびにソースコードを書き換えて、コンパイルし直す必要がありました。コンパイルし直さなくても済むように、例えばキーボードから値を直接入力して、変数の値を変えられると便利です。
 これまでに学んだ <code>printf()</code> は、標準出力（standard output）へ文字や数値を表示する関数です。
 ここでは、標準入力（standard input）から値を読み取る関数 <code>scanf()</code> を使います。</p>
 <p>inputSample.c</p>
@@ -2576,7 +2576,6 @@ source:
 </span></code></pre></div>
 <h2 id="_3">文字列の入力<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>「文字コードと文字列」のページで学んだように、文字列は <code>char</code> 型の配列に入れます。<code>scanf()</code> で文字列を読み取るときも、読み取った文字列を入れる配列を先に用意します。</p>
-<p><code>char string[1000]</code> は1000文字分の場所を用意します。末尾の <code>'\0'</code> の分を残すため、<code>scanf</code> の <code>%999s</code> で入力を999文字までに制限します。この例では半角英数字を入力してください。文字列を受け取る場合、配列名の前に <code>&amp;</code> は付けません。<code>%s</code> は空白や改行で区切られた文字列を読み込みます。</p>
 <p>inputSample5.c</p>
 <div class="language-c highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
@@ -2586,6 +2585,13 @@ source:
 </span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">string</span><span class="p">);</span>
 </span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="p">}</span>
 </span></code></pre></div>
+<p><code>char string[1000]</code> は1000文字分の場所を用意します。
+<code>scanf()</code> は、読み取った文字の後ろに <code>'\0'</code> を自動で付けます。
+その <code>'\0'</code> の分を残すため、<code>scanf</code> の <code>%999s</code> で入力を999文字までに制限します。</p>
+<p>文字列を受け取る場合、数値の変数と異なり、配列名の前に <code>&amp;</code> は付けません。
+配列名は、それ自体が文字列を入れる場所（アドレス）を表すためです。詳しくは第10回で学びます。</p>
+<p><code>%s</code> は空白や改行で区切られた文字列を読み込みます。
+この例では半角英数字を入力してください。</p>
 
 
 

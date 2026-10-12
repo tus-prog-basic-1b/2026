@@ -1846,29 +1846,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        修正と確認の手順
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        テスト値の選び方
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        デバッガで見るもの
+        基本の手順
       </span>
     </span>
   </a>
@@ -2492,29 +2470,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        修正と確認の手順
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        テスト値の選び方
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        デバッガで見るもの
+        基本の手順
       </span>
     </span>
   </a>
@@ -2546,6 +2502,34 @@ source: "generated/practicals/common"
 
 <p><a href="../navigation.html">目次</a></p>
 <h1 id="_1">デバッグの進め方<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>プログラムの誤り（バグ）を見つけて取り除く作業をデバッグと呼びます。
+デバッグの進め方と、それぞれの手順が必要な理由は、演習の回ごとに次の資料で説明します。</p>
+<table>
+<thead>
+<tr>
+<th>資料</th>
+<th>回</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>その1：コンパイルエラーと警告（未公開）</td>
+<td>第4回</td>
+<td>コンパイラのメッセージの読み方、最初のエラーから1か所ずつ直す理由、警告も直す理由</td>
+</tr>
+<tr>
+<td>その2：期待結果とテスト値（未公開）</td>
+<td>第5回</td>
+<td>期待結果を先に決める理由、通常値と境界値の選び方、途中の値の確かめ方</td>
+</tr>
+<tr>
+<td>その3：デバッガで動きを追う（未公開）</td>
+<td>第6回</td>
+<td>無限ループの止め方、デバッガを使う理由、繰り返し処理で値を確かめる場所</td>
+</tr>
+</tbody>
+</table>
 <h2 id="_2">エラーの種類<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -2553,6 +2537,7 @@ source: "generated/practicals/common"
 <th>種類</th>
 <th>状態</th>
 <th>例</th>
+<th>資料</th>
 </tr>
 </thead>
 <tbody>
@@ -2560,44 +2545,37 @@ source: "generated/practicals/common"
 <td>コンパイルエラー</td>
 <td>Cの文法などが正しくなく、実行ファイルを作れない</td>
 <td>セミコロン不足、未宣言の変数</td>
+<td>その1</td>
 </tr>
 <tr>
 <td>警告</td>
-<td>実行ファイルは作れる場合があるが、危険な誤りが疑われる</td>
+<td>実行ファイルは作れるが、誤りの可能性が高い</td>
 <td>型と書式指定子の不一致</td>
-</tr>
-<tr>
-<td>実行時の異常</td>
-<td>実行中に停止する、終わらない</td>
-<td>無限ループ</td>
+<td>その1</td>
 </tr>
 <tr>
 <td>論理エラー</td>
 <td>実行できるが結果が仕様と違う</td>
 <td>境界値だけ誤判定する</td>
+<td>その2</td>
+</tr>
+<tr>
+<td>実行時の異常</td>
+<td>実行中に停止する、終わらない</td>
+<td>無限ループ</td>
+<td>その3</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_3">修正と確認の手順<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_3">基本の手順<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ol>
 <li><code>gcc -std=c11 -Wall -Wextra -pedantic -g source.c -o executable</code> でコンパイルする。</li>
-<li>最初のエラーまたは警告から、ファイル名、行番号、種類を読む。</li>
-<li>その行と直前の行を見て原因を予想する。</li>
+<li>最初のエラーまたは警告から、ファイル名、行番号、内容を読む。</li>
+<li>その行と直前の行を見て原因を推定する。</li>
 <li>一度に1箇所だけ修正する。</li>
-<li>保存したソースを再コンパイルし、実行ファイルを更新する。</li>
-<li>通常値、境界値、境界の前後で実行し、期待結果と比較する。</li>
+<li>保存したソースをコンパイルし直し、実行ファイルを更新する。</li>
+<li>実行し、仕様から決めた期待結果と比べる。</li>
 </ol>
-<p>最初の誤りが後続の多数のエラーを引き起こすことがあります。一つずつ直すと、どの修正が結果を変えたか説明できます。</p>
-<h2 id="_4">テスト値の選び方<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>「60点以上が合格」なら、通常値だけでなく <code>59</code>、<code>60</code>、<code>61</code> を試します。この切り替わる値を境界値と呼びます。条件が複数ある場合は、それぞれの境界と、どの条件にも該当しない値を選びます。</p>
-<h2 id="_5">デバッガで見るもの<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<ul>
-<li>ループ前の累積変数の初期値</li>
-<li>条件を判定する直前の変数</li>
-<li>1回の反復で変わる値</li>
-<li>最後にループ本体を実行したときの値</li>
-<li>ループ終了直後の値</li>
-</ul>
 
 
 

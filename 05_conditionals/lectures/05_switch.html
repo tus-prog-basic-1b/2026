@@ -3386,7 +3386,7 @@ switch文は、式の値に応じて、実行する処理を選びます。</p>
 <p>式の値と一致する case から、処理が実行されます。</p>
 <p><code>break</code> は、switch文や繰り返し（第6回で学びます）の処理を、途中で抜け出す命令です。switch文では、<code>break</code> を実行すると switch文の <code>{ }</code> を抜けて、次の処理に進みます。case の処理の最後に <code>break</code> を書かないと、その下の case の処理も続けて実行されます。そのため、通常は各 case の最後に <code>break</code> を書きます。</p>
 <p><code>default</code> には、式の値がどの case にも一致しないときの処理を書きます。if文の最後の else と同じく、必要がなければ省略できます。省略した場合、どの case にも一致しないときは何も実行されません。</p>
-<p>case に書けるのは、<code>1</code> や <code>'r'</code> のような整数や文字の定数だけです。変数や、<code>age &gt;= 20</code> のような範囲の条件、小数、文字列は書けません。このような条件は、if文で判定します。</p>
+<p>switch の式には、整数型の値を指定します。case には、<code>1</code>、<code>'r'</code>、<code>1 + 2</code> のように、コンパイル時に値が決まる整数の式を書きます。実行時の変数や、小数、文字列は指定できません。また、<code>age &gt;= 20</code> のような範囲の判定は case には書けないため、if文で判定します。</p>
 <h2 id="_2">プログラムの例<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h3 id="_3">信号機<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>signal_3.cは、if文のページのsignal_1.cと同じ処理を、switch文で書いたプログラムです。信号の色によって、その状態を表示します。

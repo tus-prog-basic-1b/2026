@@ -121,6 +121,9 @@
         <loc>https://tus-prog-basic-1b.github.io/2026/06_loops/basics/exq11-lif.html</loc>
       </url>
       <url>
+        <loc>https://tus-prog-basic-1b.github.io/2026/06_loops/basics/answers/lecture06.html</loc>
+      </url>
+      <url>
         <loc>https://tus-prog-basic-1b.github.io/2026/units/practical-guides/index.html</loc>
       </url>
       <url>
@@ -191,5 +194,20 @@
       </url>
       <url>
         <loc>https://tus-prog-basic-1b.github.io/2026/units/week05_debug_conditionals/exercise_answers-files.html</loc>
+      </url>
+      <url>
+        <loc>https://tus-prog-basic-1b.github.io/2026/units/week06_debug_loops/index.html</loc>
+      </url>
+      <url>
+        <loc>https://tus-prog-basic-1b.github.io/2026/06_loops/exercises/06_debug_basics_3.html</loc>
+      </url>
+      <url>
+        <loc>https://tus-prog-basic-1b.github.io/2026/06_loops/exercises/vscode-debug-guide.html</loc>
+      </url>
+      <url>
+        <loc>https://tus-prog-basic-1b.github.io/2026/06_loops/exercises/student.html</loc>
+      </url>
+      <url>
+        <loc>https://tus-prog-basic-1b.github.io/2026/units/week06_debug_loops/exercises-files.html</loc>
       </url>
 </urlset>
